@@ -1,48 +1,19 @@
 spring:
-    profiles:
-      active: dev
+  profiles:
+    active:
+    - test
 ---
 spring:
-  profiles: dev
+  profiles: test
   application:
-      name: microcloud-provider-company
-server:
-  port:  8101
-  context-path: /cloud
-eureka:
-  client:
-    service-url:
-      defaultZone: http://edmin:eurekadmin@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka # eureka服务器集群的地址
-  instance:
-    instance-id: company-8101.giims.org #客户端服务器的地址
-    prefer-ip-address:  true #在eureka服务器中是否通过客户端的IP地址访问，否则使用计算机名称访问
-    #lease-expiration-duration-in-seconds: 90 #服务器如果在默认90秒内没有检测到客户端的心跳，则清理该服务，不建议修改此项
-    #lease-renewal-interval-in-seconds: 30 #客户端心跳频率，默认30秒一次，不建议修改此项
-info:
-  app.name: giims-microcloud
-  company.name: giims.org
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$  
+    name: microcloud-test
 ---
 spring:
   profiles: pro
   application:
-      name: microcloud-provider-company
-server:
-  port:  8102
-  context-path: /cloud
-eureka:
-  client:
-    service-url:
-      defaultZone: http://edmin:eurekadmin@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka # eureka服务器集群的地址
-  instance:
-    instance-id: company-8102.giims.org #客户端服务器的地址
-    prefer-ip-address:  true #在eureka服务器中是否通过客户端的IP地址访问，否则使用计算机名称访问
-    #lease-expiration-duration-in-seconds: 90 #服务器如果在默认90秒内没有检测到客户端的心跳，则清理该服务，不建议修改此项
-    #lease-renewal-interval-in-seconds: 30 #客户端心跳频率，默认30秒一次，不建议修改此项
-info:
-  app.name: giims-microcloud
-  company.name: giims.org
-  build.artifactId: $project.artifactId$
-  build.version: $project.version$
-  
+    name: microcloud-pro
+---
+spring:
+  profiles: dev
+  application:
+    name: microcloud-dev
