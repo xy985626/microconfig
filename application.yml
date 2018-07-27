@@ -1,10 +1,10 @@
 spring:
   profiles:
     active:
-    - test4
+    - test
 ---
 spring:
-  profiles: test4
+  profiles: test
   application:
     name: microcloud-test
 ---
