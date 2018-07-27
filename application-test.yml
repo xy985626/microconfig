@@ -1,7 +1,12 @@
 spring:
   profiles:
     active:
-      - dev
+      - pro
+---
+spring:
+  profiles: pro
+  application:
+    name: dev
 ---
 spring:
   profiles: dev
