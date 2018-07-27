@@ -1,9 +1,9 @@
 spring:
+  application:
+    name: microcloud-provider-company
   profiles:
     active:
     - dev
-  application:
-    name: microcloud-provider-company
 eureka:
   client:
     service-url:
