@@ -76,14 +76,6 @@ mybatis-plus:
     map-underscore-to-camel-case: true
     #二级缓存
     cache-enabled: false
-##############################################################################
-###  日志 配置   ### 如果配置了 logback-spring.xml，此处优先级高于logback-spring.xml配置
-##############################################################################
-logging:
-  level:
-    org.giims: DEBUG
-    org.springframework.web: INFO # spring框架的日志显示级别
-    org.springboot.sample: INFO
 ---
 spring:
   profiles: dev
