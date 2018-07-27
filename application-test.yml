@@ -1,19 +1,19 @@
 spring:
   profiles:
     active:
-      - pro
+      - test2
 ---
 spring:
-  profiles: pro
+  profiles: test1
   application:
-    name: dev
+    name: test1
 ---
 spring:
-  profiles: dev
+  profiles: test2
   application:
-    name: dev
+    name: test2
 ---
 spring:
-  profiles: test
+  profiles: test3
   application:
-    name: test
+    name: test3
