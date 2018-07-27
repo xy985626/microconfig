@@ -1,19 +1,26 @@
 spring:
   profiles:
     active:
-    - test
----
-spring:
-  profiles: test
-  application:
-    name: microcloud-test
----
-spring:
-  profiles: pro
-  application:
-    name: microcloud-pro
+    - dev
 ---
 spring:
   profiles: dev
   application:
-    name: microcloud-dev
+    name: microcloud-provider-company
+server:
+  port:  8101
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:eurekadmin@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
+---
+spring:
+  profiles: pro
+  application:
+    name: microcloud-provider-company
+server:
+  port:  8102
+eureka:
+  client:
+    service-url:
+      defaultZone: http://edmin:eurekadmin@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
