@@ -4,6 +4,8 @@ spring:
 ---
 spring:
   profiles: dev
+  application:
+      name: microcloud-provider-company
 server:
   port:  8101
   context-path: /cloud
@@ -20,16 +22,12 @@ info:
   app.name: giims-microcloud
   company.name: giims.org
   build.artifactId: $project.artifactId$
-  build.version: $project.version$
-spring:
-##############################################################################
-###  eureka服务注册的服务名称   ###
-##############################################################################
-  application:
-      name: microcloud-provider-company
+  build.version: $project.version$  
 ---
 spring:
   profiles: pro
+  application:
+      name: microcloud-provider-company
 server:
   port:  8102
   context-path: /cloud
@@ -47,9 +45,4 @@ info:
   company.name: giims.org
   build.artifactId: $project.artifactId$
   build.version: $project.version$
-spring:
-##############################################################################
-###  eureka服务注册的服务名称   ###
-##############################################################################
-  application:
-      name: microcloud-provider-company
+  
