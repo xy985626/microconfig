@@ -1,19 +1,19 @@
 spring:
   profiles:
-    active: test
-
+    active:
+    - test
 ---
 spring:
   profiles: test
   application:
-    name: test
+    name: microcloud-test
 ---
 spring:
   profiles: pro
   application:
-    name: pro
+    name: microcloud-pro
 ---
 spring:
   profiles: dev
   application:
-    name: dev
+    name: microcloud-dev
