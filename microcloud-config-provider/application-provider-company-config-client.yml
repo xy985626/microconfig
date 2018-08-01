@@ -38,7 +38,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:'{cipher}dca04a8d7c017a1788a6ac6dec348728c175df8f8264c482cc68498d3df65f5d'@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
+      defaultZone: http://edmin:'{cipher}995cf0c6153b772697a4637830d9513cacc3cd572bcfbcc46797dcb06e4418f8'@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
 info:
   app.name: giims-microcloud
   company.name: giims.org
