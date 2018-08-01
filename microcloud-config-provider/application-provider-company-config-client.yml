@@ -9,7 +9,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/giims8001?useUnicode=true&amp;characterEncoding=utf-8
     username: root
-    password: MS451103
+    password: '{cipher}94460da1502b92347f5e4469560420c1c3ed9eb894e7d50d6c7908d81f4d2fde'
 # 下面为连接池的补充设置，应用到上面所有数据源中
 # 初始化大小，最小，最大
     initialSize: 5
@@ -38,7 +38,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://edmin:'{cipher}8abd52ddf922faffe44cf329bbdd238008cac41d'@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
+      defaultZone: http://edmin:'{cipher}dca04a8d7c017a1788a6ac6dec348728c175df8f8264c482cc68498d3df65f5d'@eureka-7001.giims.org:7001/eureka,http://edmin:eurekadmin@eureka-7002.giims.org:7002/eureka,http://edmin:eurekadmin@eureka-7003.giims.org:7003/eureka 
 info:
   app.name: giims-microcloud
   company.name: giims.org
